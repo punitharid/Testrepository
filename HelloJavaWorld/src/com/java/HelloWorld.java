@@ -10,13 +10,15 @@ public class HelloWorld {
 	}
 public static void main(String[] args)
 {
-	Logger.getLogger("Hello World");	
+	
+	Logger logger = Logger.getLogger(HelloWorld.class.getName()); 
+	logger.info("Hello World");	
 	Test testObj = new Test();
 	testObj.method1();
 	int count=0;
 	if (count <1)
 	{
-		Logger.getLogger("Test major and minor errors");
+		logger.info("Test major and minor errors");
 		
 	}
 }

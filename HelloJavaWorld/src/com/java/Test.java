@@ -6,6 +6,7 @@ public class Test {
 
 	public void method1()
 	{
-		Logger.getLogger("Test method1");
+		Logger logger = Logger.getLogger(HelloWorld.class.getName());
+		logger.info("Test method1");
 	}
 }
