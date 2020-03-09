@@ -1,12 +1,11 @@
 package com.java;
 
+import java.util.logging.Logger;
+
 public class Test {
 
 	public void method1()
 	{
-		System.out.println("Test method1");
+		Logger.getLogger("Test method1");
 	}
-	
-	
-	
 }
